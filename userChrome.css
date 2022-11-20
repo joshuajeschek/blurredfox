@@ -32,3 +32,55 @@ Load Customized Firefox's UI Elements
 @import url('parts/context-menu.css');
 @import url('parts/customization-window.css');
 @import url('parts/window-controls.css');
+
+/* window transparencies */
+#main-window {
+	background: rgba(0,0,0,0.2) !important;
+	-moz-appearance: var(--bct-moz-appearance) !important;
+	backdrop-filter: blur(100px);
+}
+/* customization page */
+#customization-container {
+	background: rgba(0,0,0,0.2) !important;
+	backdrop-filter: blur(100px);
+}
+/* blank page */
+#tabbrowser-tabpanels{
+	background: rgba(0,0,0,0.2) !important;
+	backdrop-filter: blur(100px);
+}
+
+/* navbar / tabbar / titlebar */
+#nav-bar {
+	background: transparent !important;
+	border-color: transparent !important;
+}
+#navigator-toolbox {
+	background: rgba(0,0,0,0.2) !important;
+	backdrop-filter: blur(100px);
+	border: none !important;
+}
+#urlbar-background {
+	background: rgba(0,0,0,0.2) !important;
+	backdrop-filter: blur(10px);
+}
+
+/* Sidebar */
+#sidebar-box,
+#sidebar-box:-moz-lwtheme-darktext,
+#sidebar-box:-moz-lwtheme-brighttext {
+	--sidebar-background-color: var(--bct-w-sidebar-bg) !important;
+	--sidebar-text-color: var(--bct-w-sidebar-color) !important;
+	background: rgba(0,0,0,0.2) !important;
+	backdrop-filter: blur(100px);
+
+}
+#sidebar,
+.sidebar-panel {
+	background: rgba(0,0,0,0.2) !important;
+	backdrop-filter: blur(100px);
+}
+
+#urlbar > * {
+	z-index: 4200 !important;
+}
